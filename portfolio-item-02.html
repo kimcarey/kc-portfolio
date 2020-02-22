@@ -31,37 +31,29 @@
     <!-- Introduction -->
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            So You Think You're <strong>A New Yorker?</strong>
-            <p class="section__subtitle section__subtitle--intro">Test Your Knowlege</p>
-            <img src="img/ny_quiz.png"  alt="" class="intro__img">
+            Ship-<strong>wrecked!</strong>
+            <p class="section__subtitle section__subtitle--intro">An Adventure Game</p>
+            <img src="img/boat.jpg"  alt="" class="intro__img">
         </h1>
     </section>
 
     <div class="portfolio-item-individual">
-        <p>So many people who move to New York want that coveted title of <i>New Yorker</i>, but New York is more than
-            the "city that never sleeps." It has a rich history. As someone who grew up in Queens, I wanted to pay
-            tribute to the city that I love, so I created this quiz for people to see if they can truly call
-            themselves a New Yorker. </p>
-            <img src="img/portfolio-details.jpg" alt="">
-        <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS, Heroku</p>
-        <p><strong>Process:</strong> The easy part was compiling the questions and answers. I had to figure out  if I
-            should use a Class object, a list, or a dictionary. I ultimately decided on a list of dictionaries. The quiz
-            is composed of a total of 8 questions but I needed a larger pool of questions to keep the game fresh if the
-            user played multiple times. Questions also had to be randomized, while ensuring the question did not repeat
-            during the quiz session. This was the first challenge to solve.
+        <p>This was one of the final project for Udacity's Python course. The goal was to create a simple version of an
+            old-fashioned text-based adventure game. </p>
+<!--            <img src="img/boat.jpg" alt="">-->
+        <p><strong>Tech Stack:</strong> Python</p>
+        <p><strong>Process:</strong> Once I had an idea for the plot line, the first step was to compose descriptive
+            messages to set up the game. It wouldn't be a "choose your own" adventure without the element of choice. I
+            came up with a couple options for the player to choose from based on what environment they are in within the
+            game -- in this case, beach and the forest (do you hide in the cave or approach the other inhabitants?). Of
+            course, the game also needed an element of randomness and I chose to apply that to the cave scenario. I can't
+            share what it is or else that would spoil the fun!</p>
 
-            <p>I knew coming into the project that I didn't want to have users log-in. It was meant to be a simple quiz,
-            and while I could use a database to store scores and user data, I chose not to. This presented the next big
-            challenge. I needed the program to remember the state in order to keep track of what questions had been
-            asked, which question the user was on, and record user responses. Random.seed() was the perfect solution
-            for both of these issues. </p>
-
-            <p>Other considerations included the form for the multiple choice questions and unique messages based on the
-            total tally of the user's score. I opted to not use any form libraries, but instead built out the form
-            in HTML. Once everything was working correctly, the last part was the look of the quiz. I used CSS and
-            focused on simple and clean styling.</p>
-
-            <p><a href="https://ny-quiz.herokuapp.com/">Test Your NY Knowledge!</a></p>
+        <p>The biggest challenge to solve for this game was ensuring that the player enters a valid input. The game
+            will keep asking for a valid answer before progressing. Once happy with the flow of the game, I refactored
+            my code to keep it clean.
+        </p>
+        <p><a href="https://github.com/kimcarey/course-projects/blob/master/shipwreck_game_FINAL.py">Full code here</a></p>
     </div>
 
     <!-- Footer -->
