@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>//KimCarey Portfolio Website</title>
+        <title>Kim Carey Portfolio Website</title>
         <link rel="stylesheet"
         href="normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
@@ -31,17 +31,37 @@
     <!-- Introduction -->
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            The title <strong>of my project</strong>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            So You Think You're <strong>A New Yorker?</strong>
+            <p class="section__subtitle section__subtitle--intro">Test Your Knowlege</p>
+            <img src="img/ny_quiz.png"  alt="" class="intro__img">
         </h1>
     </section>
 
     <div class="portfolio-item-individual">
-        <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+        <p>So many people who move to New York want that coveted title of <i>New Yorker</i>, but New York is more than
+            the "city that never sleeps." It has a rich history. As someone who grew up in Queens, I wanted to pay
+            tribute to the city that I love, so I created this quiz for people to see if they can truly call
+            themselves a New Yorker. </p>
             <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+        <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS, Heroku</p>
+        <p><strong>Process:</strong> The easy part was compiling the questions and answers. I had to figure out  if I
+            should use a Class object, a list, or a dictionary. I ultimately decided on a list of dictionaries. The quiz
+            is composed of a total of 8 questions but I needed a larger pool of questions to keep the game fresh if the
+            user played multiple times. Questions also had to be randomized, while ensuring the question did not repeat
+            during the quiz session. This was the first challenge to solve.
+
+            <p>I knew coming into the project that I didn't want to have users log-in. It was meant to be a simple quiz,
+            and while I could use a database to store scores and user data, I chose not to. This presented the next big
+            challenge. I needed the program to remember the state in order to keep track of what questions had been
+            asked, which question the user was on, and record user responses. Random.seed() was the perfect solution
+            for both of these issues. </p>
+
+            <p>Other considerations included the form for the multiple choice questions and unique messages based on the
+            total tally of the user's score. I opted to not use any form libraries, but instead built out the form
+            in HTML. Once everything was working correctly, the last part was the look of the quiz. I used CSS and
+            focused on simple and clean styling.</p>
+
+            <p><a href="https://ny-quiz.herokuapp.com/">Test Your NY Knowledge!</a></p>
     </div>
 
     <!-- Footer -->
