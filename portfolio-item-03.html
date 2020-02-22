@@ -31,37 +31,29 @@
     <!-- Introduction -->
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            So You Think You're <strong>A New Yorker?</strong>
-            <p class="section__subtitle section__subtitle--intro">Test Your Knowlege</p>
-            <img src="img/ny_quiz.png"  alt="" class="intro__img">
+            Color <strong>Picker</strong>
+            <p class="section__subtitle section__subtitle--intro">Know your RGB?</p>
+            <img src="img/color_portfolio_item.png"  alt="" class="intro__img">
         </h1>
     </section>
 
     <div class="portfolio-item-individual">
-        <p>So many people who move to New York want that coveted title of <i>New Yorker</i>, but New York is more than
-            the "city that never sleeps." It has a rich history. As someone who grew up in Queens, I wanted to pay
-            tribute to the city that I love, so I created this quiz for people to see if they can truly call
-            themselves a New Yorker. </p>
-            <img src="img/portfolio-details.jpg" alt="">
-        <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS, Heroku</p>
-        <p><strong>Process:</strong> The easy part was compiling the questions and answers. I had to figure out  if I
-            should use a Class object, a list, or a dictionary. I ultimately decided on a list of dictionaries. The quiz
-            is composed of a total of 8 questions but I needed a larger pool of questions to keep the game fresh if the
-            user played multiple times. Questions also had to be randomized, while ensuring the question did not repeat
-            during the quiz session. This was the first challenge to solve.
+        <p>This is a fun game where the user is shown a RGB value and 6 different color circles. The user must choose
+            the correct match that corresponds to the given RGB value.</p>
+        <p><a href="https://github.com/kimcarey/Guess-The-Color">Full Code Here</a></p>
 
-            <p>I knew coming into the project that I didn't want to have users log-in. It was meant to be a simple quiz,
-            and while I could use a database to store scores and user data, I chose not to. This presented the next big
-            challenge. I needed the program to remember the state in order to keep track of what questions had been
-            asked, which question the user was on, and record user responses. Random.seed() was the perfect solution
-            for both of these issues. </p>
-
-            <p>Other considerations included the form for the multiple choice questions and unique messages based on the
-            total tally of the user's score. I opted to not use any form libraries, but instead built out the form
-            in HTML. Once everything was working correctly, the last part was the look of the quiz. I used CSS and
-            focused on simple and clean styling.</p>
-
-            <p><a href="https://ny-quiz.herokuapp.com/">Test Your NY Knowledge!</a></p>
+        <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
+        <p><strong>Process:</strong> The first thing to do was add color to the buttons. I tested it out manually using the <i>getElementByClassName()</i>
+            and <i>setAttribute()</i> functions before attempting changing the color dynamically. Once I had this
+            working, I was ready to get to work.</p>
+            <p>To make the game work, I needed to be able to select random colors between 0 and 255 (the total color
+            values between R, B, and G), using Math.round() and Math.random() and setting that formula to <i>red</i>,
+            <i>green</i>, and <i>blue</i> variables. You can then apply a for loop in order to change the color of the
+            buttons.</p>
+            <p>Then, I had to work on picking a random button as the winning answer and making it so that, when the
+            player clicks on the correct button, they see a message that they've won. I added an event listener in
+            order to know which button the player selected. The last piece was resetting the game, so that it will clear
+            the previous round and start a new game.</p>
     </div>
 
     <!-- Footer -->
