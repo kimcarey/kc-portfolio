@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: portfolio-pod
+spec:
+  containers:
+  - name: portfolio-container
+    image: gcr.io/my-portfolio-269423/webserver-image:v1
